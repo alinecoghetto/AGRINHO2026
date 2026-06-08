@@ -3,127 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro forte, futuro sustentável | AGRINHO 2026</title>
+    <title>Agro Forte, Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo">✏️ agro.journal</div>
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">☰</button>
-            <nav class="nav-menu" id="navMenu">
-                <a href="#inicio">Início</a>
-                <a href="#producao">O Campo</a>
-                <a href="#tecnologias">Inovações</a>
-                <a href="#desafios">Desafios</a>
-                <a href="#desafio-quiz">Quiz</a>
-                <a href="#contato">Carta</a>
-            </nav>
+    <header class="site-header">
+        <h1>AGRO FORTE, FUTURO SUSTENTÁVEL</h1>
+        <div class="subtitle">Tecnologia, Produção Agrícola e Preservação Ambiental</div>
+        <div class="ticker-container">
+            <marquee class="retro-marquee">++ BEM-VINDO AO AGRINHO 2026 ++ ATUALIZADO EM: 08/06/2026 ++ SOLUÇÕES PARA O EQUILÍBRIO AMBIENTAL ++</marquee>
         </div>
     </header>
 
-    <main>
-        <section id="inicio" class="hero-section">
-            <div class="journal-cover">
-                <div class="washi-tape tape-green"></div>
-                <div class="sticker star-doodle">⭐️</div>
-                <h1>CULTIVANDO O AMANHÃ</h1>
-                <p class="question-prompt">“Como o agronegócio pode crescer sem comprometer o futuro?”</p>
-                <div class="polaroid-frame">
-                    <div class="polaroid-photo">🌱</div>
-                    <div class="polaroid-caption">Equilíbrio perfeito.</div>
-                </div>
-                <a href="#desafio-quiz" class="btn-handwritten">Abrir Caderno 📝</a>
-            </div>
-        </section>
+    <table class="main-layout" cellspacing="10" cellpadding="10">
+        <tr>
+            <td class="sidebar-left" valign="top">
+                <div class="box-title">Navegar</div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">_Início</a></li>
+                    <li><a href="#producao">_Produção Agrícola</a></li>
+                    <li><a href="#sustentabilidade">_Sustentabilidade</a></li>
+                    <li><a href="#desafios">_Desafios Ambientais</a></li>
+                    <li><a href="#solucoes">_Soluções & Futuro</a></li>
+                </ul>
 
-        <section id="producao" class="section-padding">
-            <div class="container">
-                <div class="torn-paper-card">
-                    <div class="washi-tape tape-pink"></div>
-                    <h2>O Motor da Economia 🌾</h2>
-                    <p>O agronegócio responde por cerca de <strong>25% do PIB nacional</strong>. É o pilar que sustenta empregos e garante comida na mesa. Mas o verdadeiro desafio moderno é produzir respeitando os ciclos da nossa terra.</p>
-                    <div class="badge-tag">Fato Importante!</div>
+                <div class="box-title">Enquete Retro</div>
+                <div class="poll-box">
+                    <p>Como você avalia o uso de drones no campo?</p>
+                    <input type="radio" id="p1" name="poll"><label for="p1"> Excelente</label><br>
+                    <input type="radio" id="p2" name="poll"><label for="p2"> Necessário</label><br>
+                    <input type="radio" id="p3" name="poll"><label for="p3"> Indiferente</label><br>
+                    <button class="retro-btn" onclick="votarEnquete()">Votar</button>
                 </div>
-            </div>
-        </section>
 
-        <section id="tecnologias" class="section-padding">
-            <div class="container">
-                <div class="grid-paper-card">
-                    <h2>Inovações do Campo ✨</h2>
-                    <p class="subtitle">Anotações sobre tecnologia sustentável:</p>
+                <div class="box-title">Parceiros</div>
+                <center>
+                    <div class="retro-banner-button">AGRINHO 2026</div>
+                    <div class="retro-banner-button">SUSTENTÁVEL</div>
+                </center>
+            </td>
+
+            <td class="content-area" valign="top">
+                
+                <section id="inicio" class="content-section">
+                    <h2>Marcha do Progresso Verde</h2>
+                    <p class="intro-text">
+                        Como o agronegócio pode crescer economicamente sem comprometer os recursos naturais das futuras gerações? Esta é a pergunta que move a nossa era.
+                    </p>
+                    <blockquote class="retro-quote">
+                        "A terra nos dá tudo, desde que saibamos cuidar do seu ciclo natural."
+                    </blockquote>
+                </section>
+
+                <section id="producao" class="content-section">
+                    <h2>Seção 1: Produção Agrícola & Economia</h2>
+                    <p>O agronegócio é um dos principais pilares da economia nacional. No entanto, o verdadeiro crescimento atual está atrelado à incorporação de novas tecnologias de precisão, que evitam o desperdício de insumos.</p>
+                </section>
+
+                <section id="sustentabilidade" class="content-section">
+                    <h2>Seção 2: Práticas Sustentáveis</h2>
+                    <p>A conservação do solo, rotação de culturas e a substituição por matrizes de energias limpas (como painéis solares e biomassa nas fazendas) ditam as regras da nova revolução no campo.</p>
+                </section>
+
+                <section id="desafios" class="content-section">
+                    <h2>Seção 3: Desafios Ambientais</h2>
+                    <p>Enfrentamos problemas severos que exigem atenção imediata:</p>
+                    <ul>
+                        <li>Controle rigoroso do uso da água e irrigação inteligente;</li>
+                        <li>Redução drástica das emissões de carbono;</li>
+                        <li>Combate ao desmatamento ilegal através de monitoramento por satélite.</li>
+                    </ul>
+                </section>
+
+                <section id="solucoes" class="content-section">
+                    <h2>Seção 4: O Futuro da Agricultura Regenerativa</h2>
+                    <p>Teste seus conhecimentos no nosso mini-painel interativo:</p>
                     
-                    <div class="notebook-list">
-                        <div class="list-item">
-                            <span>➔</span>
-                            <p><strong>Agricultura de Precisão:</strong> Sensores que aplicam insumos apenas onde a planta precisa.</p>
-                        </div>
-                        <div class="list-item">
-                            <span>➔</span>
-                            <p><strong>Irrigação Inteligente:</strong> Gotejamento automatizado que reduz o uso de água em até 50%💧</p>
-                        </div>
-                        <div class="list-item">
-                            <span>➔</span>
-                            <p><strong>Drones de Monitoramento:</strong> Mapeamento aéreo para detectar pragas sem abusar de defensivos.</p>
-                        </div>
+                    <div class="quiz-container">
+                        <div class="box-title">Desafio Ecológico</div>
+                        <p>Qual tecnologia ajuda a economizar água mapeando a umidade exata do solo?</p>
+                        <button class="retro-btn" onclick="verificarQuiz('errado')">Drones de Carga</button>
+                        <button class="retro-btn" onclick="verificarQuiz('certo')">Irrigação Inteligente</button>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="desafios" class="section-padding">
-            <div class="container">
-                <div class="handwritten-notebook">
-                    <div class="binder-rings">
-                        <div class="ring"></div>
-                        <div class="ring"></div>
-                        <div class="ring"></div>
-                    </div>
-                    <h2>Diagnósticos Urgentes ⚠️</h2>
-                    <p>Não podemos ignorar os impactos atuais. O desmatamento, a emissão desenfreada de carbono e o esgotamento das fontes de água são riscos reais para a própria agricultura.</p>
-                    <p><em>Solução: A agricultura regenerativa ajuda a curar o solo enquanto mantém a produtividade em alta!</em></p>
-                </div>
-            </div>
-        </section>
-
-        <section id="desafio-quiz" class="section-padding">
-            <div class="container">
-                <div class="quiz-box-scrapbook">
-                    <div class="washi-tape tape-yellow"></div>
-                    <h3>🍎 Teste seu Conhecimento</h3>
-                    <p id="quiz-question">Qual método economiza mais água no manejo agrícola?</p>
-                    
-                    <div class="quiz-options">
-                        <button class="btn-option" onclick="verificarResposta(true)">Irrigação por Gotejamento 🌱</button>
-                        <button class="btn-option" onclick="verificarResposta(false)">Aspersão Padrão 💧</button>
-                    </div>
-                    <div id="quiz-feedback" class="quiz-feedback hidden"></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contato" class="section-padding">
-            <div class="container">
-                <div class="letter-box">
-                    <h2>Deixe sua nota ✉️</h2>
-                    <form id="contactForm">
-                        <input type="text" id="nome" placeholder="Seu nome..." required>
-                        <input type="email" id="email" placeholder="Seu e-mail..." required>
-                        <textarea id="mensagem" placeholder="Escreva suas ideias sobre sustentabilidade aqui..." rows="4" required></textarea>
-                        <button type="submit" class="btn-handwritten">Enviar Nota 🕊️</button>
+                <section class="content-section">
+                    <h2>Mensagem Final & Conscientização</h2>
+                    <form id="contactForm" class="retro-form">
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" required><br><br>
+                        
+                        <label for="mensagem">Deixe sua ideia sobre sustentabilidade:</label><br>
+                        <textarea id="mensagem" rows="4" required></textarea><br>
+                        
+                        <button type="submit" class="retro-btn">Enviar Manifesto</button>
                     </form>
-                    <div id="formFeedback" class="form-feedback hidden"></div>
-                </div>
-            </div>
-        </section>
-    </main>
+                </section>
 
-    <footer class="journal-footer">
-        <p>Criado com 🤍 para o Projeto Agrinho • 2026</p>
+            </td>
+
+            <td class="sidebar-right" valign="top">
+                <div class="box-title">Estatísticas</div>
+                <div class="status-box">
+                    <p><strong>Status:</strong> Ativo</p>
+                    <p><strong>Versão:</strong> Web 1.0</p>
+                    <p><strong>Foco:</strong> Preservação</p>
+                </div>
+
+                <div class="box-title">Interatividade</div>
+                <p class="small-text">Utilize o menu lateral para saltar entre os tópicos do manifesto.</p>
+                
+                <center>
+                    <div class="retro-clock" id="clock">00:00:00</div>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <footer class="site-footer">
+        <p>© AGRINHO 2026 - Desenvolvido no estilo Old-School Web - Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+     
