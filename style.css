@@ -1,382 +1,208 @@
-/* CONFIGURAÇÕES DE FONTES E ESTILO SCRAPBOOK */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@400;700&family=Architects+Daughter&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* CONFIGURAÇÃO GERAL RETRÔ (Inspirado nas imagens enviadas) */
 body {
-    /* Fundo estilo papel craft/pontilhado sutil */
-    background-color: #f4f1ea;
-    background-image: radial-gradient(#d3cbb6 1.5px, transparent 1.5px);
-    background-size: 24px 24px;
-    color: #3d3a35;
-    font-family: 'Kalam', cursive;
-    padding-top: 80px;
-}
-
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.section-padding {
-    padding: 50px 0;
-}
-
-h2, h3 {
-    font-family: 'Caveat', cursive;
-    font-size: 2.5rem;
-    color: #2b4c3f;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-/* NAVBAR (ESTILO ABAS) */
-.main-header {
-    background: #ffffff;
-    border-bottom: 3px dashed #b5a88d;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 5%;
-}
-
-.logo {
-    font-family: 'Architects Daughter', cursive;
-    font-size: 1.4rem;
-    color: #2b4c3f;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #6e6552;
-    font-family: 'Kalam', cursive;
-    margin-left: 15px;
-    font-size: 1.1rem;
-    padding: 5px 10px;
-    transition: all 0.2s;
-}
-
-.nav-menu a:hover {
-    background: #eae5d8;
-    border-radius: 8px;
-    color: #2b4c3f;
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-}
-
-/* FITAS ADESIVAS (WASHI TAPE) */
-.washi-tape {
-    position: absolute;
-    top: -12px;
-    left: 35%;
-    width: 30%;
-    height: 25px;
-    opacity: 0.75;
-    transform: rotate(-1.5deg);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
-
-.tape-green { background-color: #839788; border-left: 2px dashed #fff; border-right: 2px dashed #fff; }
-.tape-pink { background-color: #e5b3b3; border-left: 2px dashed #fff; border-right: 2px dashed #fff; }
-.tape-yellow { background-color: #ebd197; border-left: 2px dashed #fff; border-right: 2px dashed #fff; }
-
-/* ADESIVOS / STICKERS */
-.sticker {
-    position: absolute;
-    font-size: 2rem;
-    user-select: none;
-}
-
-.star-doodle {
-    top: 15px;
-    right: 20px;
-    transform: rotate(15deg);
-}
-
-/* HERO: CAPA DO CADERNO */
-.hero-section {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
-}
-
-.journal-cover {
-    background: #fffdf6;
-    border: 2px solid #dfd8c4;
-    border-radius: 4px;
-    padding: 40px 30px;
-    width: 100%;
-    max-width: 650px;
-    position: relative;
-    box-shadow: 6px 6px 0px #dcd5be;
-    text-align: center;
-}
-
-.journal-cover h1 {
-    font-family: 'Architects Daughter', cursive;
-    font-size: 2.4rem;
-    color: #2b4c3f;
-    margin-bottom: 15px;
-}
-
-.question-prompt {
-    font-style: italic;
-    color: #7a715c;
-    margin-bottom: 25px;
-    font-size: 1.2rem;
-}
-
-/* FOTO POLAROID RECORTE */
-.polaroid-frame {
-    background: #ffffff;
-    padding: 15px 15px 30px 15px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.08);
-    border: 1px solid #eae5d4;
-    width: 180px;
-    margin: 0 auto 30px auto;
-    transform: rotate(-3deg);
-}
-
-.polaroid-photo {
-    background: #eef2f0;
-    font-size: 3.5rem;
-    padding: 20px 0;
-    border-radius: 2px;
-}
-
-.polaroid-caption {
-    font-family: 'Caveat', cursive;
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #555;
-}
-
-/* BOTÕES MANUSCRITOS */
-.btn-handwritten {
-    display: inline-block;
-    background: #2b4c3f;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 25px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 20px 5px 20px 4px; /* Formato irregular feito à mão */
-    cursor: pointer;
-    box-shadow: 2px 3px 0px #162821;
-    transition: transform 0.1s;
-}
-
-.btn-handwritten:hover {
-    transform: scale(1.03);
-}
-
-/* BLOCO PAPEL RASGADO (BORDAS LEVEMENTE IRREGULARES) */
-.torn-paper-card {
-    background: #fffdf9;
-    border: 1px dashed #c0b69f;
-    border-radius: 3px 6px 4px 8px/4px 3px 6px 3px; /* Simula corte manual */
-    padding: 35px;
-    position: relative;
-    box-shadow: 2px 4px 12px rgba(0,0,0,0.04);
-}
-
-.badge-tag {
-    position: absolute;
-    bottom: -10px;
-    right: 20px;
-    background: #e5b3b3;
-    padding: 3px 12px;
-    font-size: 0.9rem;
-    transform: rotate(2deg);
-    border-radius: 3px;
-}
-
-/* CADERNO QUADRICULADO */
-.grid-paper-card {
-    background-color: #faf9f5;
-    background-image: linear-gradient(#e1dbcd 1px, transparent 1px),
-                      linear-gradient(90deg, #e1dbcd 1px, transparent 1px);
-    background-size: 20px 20px;
-    border: 1px solid #d3cbb7;
-    padding: 35px;
-    border-radius: 4px;
-    box-shadow: 4px 4px 0px #e1dbcd;
-}
-
-.notebook-list {
-    margin-top: 20px;
-}
-
-.list-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.list-item span {
-    color: #c06c5c;
-    font-size: 1.3rem;
-}
-
-/* FOLHA DE FICHÁRIO COM LINHAS E ARGOLAS */
-.handwritten-notebook {
-    background: #ffffff;
-    background-image: linear-gradient(#e5ecf4 1px, transparent 1px);
-    background-size: 100% 28px; /* Cria linhas horizontais perfeitamente espaçadas */
-    line-height: 28px;
-    padding: 40px 40px 40px 60px; /* Margem esquerda para simular furos */
-    border-left: 2px solid #e8a7a7; /* Linha de margem rosa do caderno */
-    border-top: 1px solid #e0e0e0;
-    border-right: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-    position: relative;
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.05);
-}
-
-.binder-rings {
-    position: absolute;
-    left: 15px;
-    top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
-.ring {
-    width: 15px;
-    height: 15px;
-    background: #eae5d8;
-    border: 2px solid #b5a88d;
-    border-radius: 50%;
-}
-
-/* COMPONENTES DO QUIZ SCRAPBOOK */
-.quiz-box-scrapbook {
-    background: #fffdf2;
-    border: 2px dashed #839788;
-    padding: 35px;
-    text-align: center;
-    position: relative;
-    border-radius: 5px;
-}
-
-.quiz-options {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.btn-option {
-    background: #fff;
-    border: 1.5px solid #6e6552;
-    font-family: 'Kalam', cursive;
-    padding: 10px 18px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 12px 4px 15px 3px;
-    box-shadow: 1px 2px 0px #6e6552;
-    transition: background 0.2s;
-}
-
-.btn-option:hover {
-    background: #f4f1ea;
-}
-
-.quiz-feedback {
-    margin-top: 20px;
+    background-color: #0d0d0d;
+    background-image: linear-gradient(180deg, #130a1c 0%, #0d0d0d 100%);
+    color: #b3b3b3;
+    font-family: "Courier New", Courier, monospace, "Georgia", serif;
+    margin: 0;
     padding: 10px;
-    border-radius: 4px;
+}
+
+/* LINKS ESTILO ANOS 2000 */
+a {
+    color: #9d7cd8;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #bf95ff;
+    background-color: #261739;
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+.site-header {
+    border: 3px double #5a3e85;
+    background-color: #160f24;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.site-header h1 {
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 0 0 5px 0;
+    text-shadow: 2px 2px #441166;
+}
+
+.site-header .subtitle {
+    color: #a6a6a6;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* TEXTO CORRENDO (MARQUEE) */
+.ticker-container {
+    background-color: #000000;
+    border: 1px solid #444;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+.retro-marquee {
+    color: #00ff66;
+    font-size: 12px;
     font-weight: bold;
 }
-.quiz-feedback.success { background: #d3ebd5; color: #2b4c3f; }
-.quiz-feedback.error { background: #f2dadb; color: #a64b4b; }
 
-/* CAIXA DE CARTA (FORMULÁRIO) */
-.letter-box {
-    background: #fdfcf7;
-    border: 1px solid #ded9cb;
-    padding: 35px;
-    border-radius: 2px;
-    box-shadow: inset 0 0 20px rgba(230,223,203,0.3), 3px 3px 10px rgba(0,0,0,0.05);
+/* TABELA DE LAYOUT PRINCIPAL */
+.main-layout {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: separate;
 }
 
-.letter-box form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+/* BARRAS LATERAIS */
+.sidebar-left, .sidebar-right {
+    width: 22%;
+    background-color: #121212;
+    border: 1px solid #3a285c;
+    padding: 10px !important;
 }
 
-.letter-box input, .letter-box textarea {
-    background: transparent;
-    border: none;
-    border-bottom: 1px dashed #b5a88d;
-    font-family: 'Kalam', cursive;
-    font-size: 1.1rem;
-    padding: 8px 5px;
-    outline: none;
-    color: #3d3a35;
+/* ÁREA DE CONTEÚDO PRINCIPAL */
+.content-area {
+    width: 56%;
+    background-color: #171717;
+    border: 2px solid #5a3e85;
+    padding: 15px !important;
 }
 
-.letter-box input:focus, .letter-box textarea:focus {
-    border-bottom-color: #2b4c3f;
-}
-
-.form-feedback {
-    margin-top: 15px;
-    text-align: center;
-    color: #2b4c3f;
+/* TÍTULOS DE CAIXAS (ESTILO DARK CULTURE / SPACEHEY) */
+.box-title {
+    background: linear-gradient(90deg, #442a6b, #1d1133);
+    color: #ffffff;
+    padding: 4px 8px;
+    font-size: 14px;
     font-weight: bold;
+    border: 1px solid #6b40b5;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.hidden { display: none !important; }
+/* LISTAS DE NAVEGAÇÃO */
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-/* RODAPÉ DO DIÁRIO */
-.journal-footer {
+.nav-links li {
+    padding: 6px 0;
+    border-bottom: 1px dashed #333;
+}
+
+/* SEÇÕES DE CONTEÚDO */
+.content-section {
+    border-bottom: 2px dashed #444;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    color: #d1b3ff;
+    font-size: 18px;
+    border-bottom: 1px solid #5a3e85;
+    padding-bottom: 3px;
+}
+
+/* BLOCO DE CITAÇÃO */
+.retro-quote {
+    background-color: #211830;
+    border-left: 4px solid #8c52ff;
+    margin: 15px 0;
+    padding: 10px;
+    font-style: italic;
+    color: #dcd1ed;
+}
+
+/* BOTÕES RETRÔ */
+.retro-btn {
+    background-color: #2b1c40;
+    color: #ffffff;
+    border-top: 2px solid #6c47a3;
+    border-left: 2px solid #6c47a3;
+    border-right: 2px solid #1a0f29;
+    border-bottom: 2px solid #1a0f29;
+    padding: 4px 10px;
+    font-family: "Courier New", monospace;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.retro-btn:active {
+    border-top: 2px solid #1a0f29;
+    border-left: 2px solid #1a0f29;
+    border-right: 2px solid #6c47a3;
+    border-bottom: 2px solid #6c47a3;
+}
+
+/* CAIXA DE ENQUETE E STATUS */
+.poll-box, .status-box, .quiz-container {
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: #0a0a0a;
+    padding: 8px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+/* BOTÕES ESTILO BANNER RETRÔ 88x31 */
+.retro-banner-button {
+    width: 88px;
+    height: 31px;
+    background-color: #5a3e85;
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 31px;
+    border: 2px solid #fff;
+    margin-bottom: 8px;
     text-align: center;
-    padding: 30px;
-    font-size: 1rem;
-    color: #8c8370;
-    border-top: 1px dashed #b5a88d;
-    margin-top: 40px;
 }
 
-/* RESPONSIVIDADE MOBILE */
-@media (max-width: 768px) {
-    .menu-toggle { display: block; }
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 55px;
-        left: 0;
-        width: 100%;
-        background: #ffffff;
-        padding: 15px;
-        border-bottom: 3px dashed #b5a88d;
-    }
-    .nav-menu.active { display: flex; }
-    .nav-menu a { margin: 8px 0; text-align: center; }
-    .handwritten-notebook { padding: 40px 20px; }
-    .binder-rings { display: none; }
+/* FORMULÁRIO DE MANIFESTO */
+.retro-form input[type="text"], .retro-form textarea {
+    background-color: #000000;
+    border: 1px solid #5a3e85;
+    color: #00ff66;
+    font-family: "Courier New", monospace;
+    padding: 5px;
+    width: 90%;
+}
+
+/* RELÓGIO RETRÔ */
+.retro-clock {
+    background-color: #000;
+    color: #ff3333;
+    font-family: monospace;
+    padding: 5px;
+    border: 1px solid #444;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* RODAPÉ */
+.site-footer {
+    text-align: center;
+    font-size: 11px;
+    border-top: 3px double #5a3e85;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: #666;
 }
