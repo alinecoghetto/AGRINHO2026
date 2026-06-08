@@ -1,7 +1,16 @@
-/* CONFIGURAÇÃO GERAL RETRÔ (Inspirado nas imagens enviadas) */
+/* FUNDO COM TEXTURA DOS ANOS 2000 (Efeito Quadriculado/Gótico Escuro) */
 body {
-    background-color: #0d0d0d;
-    background-image: linear-gradient(180deg, #130a1c 0%, #0d0d0d 100%);
+    background-color: #0f0a14;
+    /* Padrão geométrico de linhas cruzadas simulando a textura escura das imagens */
+    background-image: 
+        linear-gradient(30deg, #150f1f 12%, transparent 12.5%, transparent 87%, #150f1f 87.5%, #150f1f),
+        linear-gradient(150deg, #150f1f 12%, transparent 12.5%, transparent 87%, #150f1f 87.5%, #150f1f),
+        linear-gradient(30deg, #150f1f 12%, transparent 12.5%, transparent 87%, #150f1f 87.5%, #150f1f),
+        linear-gradient(150deg, #150f1f 12%, transparent 12.5%, transparent 87%, #150f1f 87.5%, #150f1f),
+        linear-gradient(60deg, #1a1226 25%, transparent 25.5%, transparent 75%, #1a1226 75.5%, #1a1226),
+        linear-gradient(60deg, #1a1226 25%, transparent 25.5%, transparent 75%, #1a1226 75.5%, #1a1226);
+    background-size: 40px 70px;
+    background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
     color: #b3b3b3;
     font-family: "Courier New", Courier, monospace, "Georgia", serif;
     margin: 0;
@@ -65,32 +74,37 @@ a:hover {
     border-collapse: separate;
 }
 
-/* BARRAS LATERAIS */
+/* BARRAS LATERAIS RENDADAS (Bordas pontilhadas simulando tiras de renda das imagens) */
 .sidebar-left, .sidebar-right {
     width: 22%;
-    background-color: #121212;
-    border: 1px solid #3a285c;
+    background-color: #0d0d0d;
+    border-left: 4px dotted #5a3e85;
+    border-right: 4px dotted #5a3e85;
+    border-top: 1px solid #3a285c;
+    border-bottom: 1px solid #3a285c;
     padding: 10px !important;
 }
 
 /* ÁREA DE CONTEÚDO PRINCIPAL */
 .content-area {
     width: 56%;
-    background-color: #171717;
+    background-color: #121212;
     border: 2px solid #5a3e85;
     padding: 15px !important;
 }
 
-/* TÍTULOS DE CAIXAS (ESTILO DARK CULTURE / SPACEHEY) */
+/* TÍTULOS DE CAIXAS COM SOMBREAMENTO RETRÔ DE PIXEL */
 .box-title {
-    background: linear-gradient(90deg, #442a6b, #1d1133);
+    background: linear-gradient(90deg, #321b50, #130a1c);
     color: #ffffff;
-    padding: 4px 8px;
-    font-size: 14px;
+    padding: 6px;
+    font-size: 13px;
     font-weight: bold;
-    border: 1px solid #6b40b5;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    border: 1px solid #5a3e85;
+    box-shadow: 3px 3px 0px #000000;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    letter-spacing: 1px;
 }
 
 /* LISTAS DE NAVEGAÇÃO */
@@ -105,11 +119,22 @@ a:hover {
     border-bottom: 1px dashed #333;
 }
 
-/* SEÇÕES DE CONTEÚDO */
+/* DIVISOR DE SEÇÃO EM FORMATO DE FIGURA RETRÔ */
+.retro-divider {
+    text-align: center;
+    color: #5a3e85;
+    letter-spacing: 5px;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+/* ADICIONANDO MOLDURA NAS SEÇÕES */
 .content-section {
-    border-bottom: 2px dashed #444;
-    padding-bottom: 15px;
+    border: 1px double #332244;
+    background-color: #161616;
+    padding: 15px;
     margin-bottom: 20px;
+    outline: 1px solid #000;
 }
 
 .content-section h2 {
@@ -154,7 +179,7 @@ a:hover {
 .poll-box, .status-box, .quiz-container {
     font-size: 12px;
     line-height: 1.5;
-    background-color: #0a0a0a;
+    background-color: #000000;
     padding: 8px;
     border: 1px solid #333;
     margin-bottom: 10px;
