@@ -53,7 +53,7 @@ function configurarFormulario() {
     
     if (formulario) {
         formulario.addEventListener('submit', (evento) => {
-            evento.preventDefault(); // Impede o recarregamento clássico da página
+            evento.preventDefault(); 
             
             const nome = document.getElementById('nome').value;
             const mensagem = document.getElementById('mensagem').value;
@@ -62,7 +62,7 @@ function configurarFormulario() {
                 alert("Erro no sistema: preencha todos os campos do manifesto!");
             } else {
                 alert(`Obrigado, ${nome}! Seu manifesto ambiental foi registrado com sucesso em nossa base de dados.`);
-                formulario.reset(); // Limpa as caixas de digitação
+                formulario.reset(); 
             }
         });
     }
