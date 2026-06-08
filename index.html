@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRINHO 2026 - Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="logo">🌱 EcoAgro.journal</div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">☰</button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="#inicio">Início</a>
+            <a href="#producao">Economia</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#desafios">Desafios</a>
+            <a href="#solucoes">Futuro</a>
+            <a href="#desafio-quiz">Desafio Quiz</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero-section">
+        <div class="hero-paper">
+            <span class="washi-tape"></span>
+            <h1>✨ CULTIVANDO O AMANHÃ</h1>
+            <p class="question">Como integrar tecnologia de ponta ao manejo sustentável da terra?</p>
+            <p class="subtitle">Descubra como o agronegócio pode crescer economicamente sem comprometer os recursos naturais das futuras gerações.</p>
+            <a href="#desafio-quiz" class="btn-primary">Testar Conhecimentos 🍎</a>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <section id="producao" class="scrapbook-section">
+            <h2>📊 O Motor do Campo & A Economia</h2>
+            <div class="grid-two-columns">
+                <div class="text-block">
+                    <p>O agronegócio é um pilar fundamental para o desenvolvimento, sendo responsável por cerca de <strong>25% do PIB nacional</strong>. Além de garantir a segurança alimentar global, o setor impulsiona a geração de empregos e equilibra a balança comercial.</p>
+                </div>
+                <div class="graphic-card">
+                    <h3>Impacto no PIB</h3>
+                    <div class="bar-chart">
+                        <div class="bar" style="width: 25%;"><span>25% Agro</span></div>
+                        <div class="bar" style="width: 75%;"><span>75% Outros Setores</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="tech-section">
+            <h2>📌 Caderno de Inovações Tecnológicas</h2>
+            <div class="cards-grid">
+                <div class="card-pin">
+                    <span class="pin"></span>
+                    <h3>Agricultura de Precisão</h3>
+                    <p>Uso de dados georreferenciados e sensores para gerenciar a lavoura de forma cirúrgica, aplicando insumos apenas onde e quando necessário.</p>
+                </div>
+                <div class="card-pin">
+                    <span class="pin"></span>
+                    <h3>Irrigação Inteligente</h3>
+                    <p>Sistemas automatizados que monitoram a umidade do solo em tempo real, distribuindo a água por gotejamento e reduzindo o desperdício em até 50%.</p>
+                </div>
+                <div class="card-pin">
+                    <span class="pin"></span>
+                    <h3>Drones na Gestão</h3>
+                    <p>Monitoramento aéreo com câmeras térmicas para detectar focos de pragas precocemente, minimizando a necessidade de defensivos químicos.</p>
+                </div>
+                <div class="card-pin">
+                    <span class="pin"></span>
+                    <h3>Matriz Energética Limpa</h3>
+                    <p>Substituição de combustíveis fósseis por painéis solares e biomassa para abastecer o maquinário e as instalações rurais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="desafios" class="challenges-section">
+            <h2>⌨️ Desafios Ambientais Críticos</h2>
+            <div class="typewriter-block">
+                <p>> Diagnóstico Atual: A expansão agrícola tradicional sem planejamento gera severas pressões sobre o ecossistema global.</p>
+                <ul>
+                    <li><strong>Desmatamento:</strong> Perda de biodiversidade e habitats naturais.</li>
+                    <li><strong>Estresse Hídrico:</strong> Uso ineficiente das bacias hidrográficas.</li>
+                    <li><strong>Emissões de Carbono:</strong> Contribuição direta para as mudanças climáticas globais.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="solucoes" class="solutions-section">
+            <h2>🌱 O Futuro Regenerativo</h2>
+            <p>A resposta para o equilíbrio reside em modelos sustentáveis como a <strong>Agricultura Regenerativa</strong> e a <strong>ILPF (Integração Lavoura-Pecuária-Floresta)</strong>. Estas práticas recuperam a saúde do solo, fixam o carbono na terra e aumentam a resiliência ecológica enquanto mantêm os índices de produtividade elevados.</p>
+        </section>
+
+        <section id="desafio-quiz" class="quiz-section">
+            <h2>🍎 DESAFIO DA SUSTENTABILIDADE</h2>
+            <div class="quiz-container">
+                <p class="quiz-question">Qual método otimiza de forma mais eficiente o uso de recursos hídricos na lavoura?</p>
+                <div class="quiz-options">
+                    <button class="btn-quiz" data-correct="true">Irrigação por Gotejamento 🌱</button>
+                    <button class="btn-quiz" data-correct="false">Aspersão Convencional 💧</button>
+                </div>
+                <div id="quizFeedback" class="quiz-feedback hidden"></div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <h2>✉️ Entre em Contato</h2>
+            <form id="contactForm" class="postal-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required placeholder="seu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" rows="4" required placeholder="Como podemos construir um agro mais verde?"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Cartão Postal</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>©️ Desenvolvido com foco em sustentabilidade e tecnologia • AGRINHO 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
