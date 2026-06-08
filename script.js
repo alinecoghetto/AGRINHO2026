@@ -1,57 +1,69 @@
-document.addEventListener("DOMContentLoaded", function() {
-    
-    // --- 1. CONTROLE DO MENU RESPONSIVO ---
-    const menuToggle = document.getElementById("menuToggle");
-    const navMenu = document.getElementById("navMenu");
-
-    menuToggle.addEventListener("click", function() {
-        navMenu.classList.toggle("active");
-    });
-
-    // Fecha o menu automaticamente ao clicar em qualquer item (melhor experiência em Mobile)
-    const linksNavegacao = document.querySelectorAll(".nav-menu a");
-    linksNavegacao.forEach(link => {
-        link.addEventListener("click", () => {
-            navMenu.classList.remove("active");
-        });
-    });
-
-    // --- 2. GERENCIADOR DO FORMULÁRIO DE CONTATO (ESTILO POSTAL) ---
-    const contactForm = document.getElementById("contactForm");
-    const formFeedback = document.getElementById("formFeedback");
-
-    contactForm.addEventListener("submit", function(event) {
-        event.preventDefault(); // Evita o recarregamento padrão do navegador
-
-        // Resgata os valores coletados
-        const nome = document.getElementById("nome").value;
-        const email = document.getElementById("email").value;
-
-        // Exibe feedback dinâmico na tela
-        formFeedback.textContent = `Obrigado pelo contato, ${nome}! Sua mensagem sobre sustentabilidade foi recebida com sucesso.`;
-        formFeedback.classList.remove("hidden");
-
-        // Limpa os campos do formulário pós-envio
-        contactForm.reset();
-
-        // Remove a mensagem após 5 segundos automaticamente
-        setTimeout(() => {
-            formFeedback.classList.add("hidden");
-        }, 5000);
-    });
+// EXECUTA FUNÇÕES RETRÔ AO CARREGAR A PÁGINA
+document.addEventListener("DOMContentLoaded", () => {
+    iniciarRelogio();
+    configurarFormulario();
 });
 
-// --- 3. SISTEMA DE VERIFICAÇÃO DO QUIZ INTERATIVO ---
-function verificarResposta(isCorrect) {
-    const feedbackBox = document.getElementById("quiz-feedback");
-    
-    feedbackBox.classList.remove("hidden", "success", "error");
+// 1. RELÓGIO DIGITAL DINÂMICO
+function iniciarRelogio() {
+    setInterval(() => {
+        const agora = new Date();
+        const horas = String(agora.getHours()).padStart(2, '0');
+        const minutos = String(agora.getMinutes()).padStart(2, '0');
+        const segundos = String(agora.getSeconds()).padStart(2, '0');
+        
+        const elementoRelogio = document.getElementById('clock');
+        if (elementoRelogio) {
+            elementoRelogio.textContent = `${horas}:${minutos}:${segundos}`;
+        }
+    }, 1000);
+}
 
-    if (isCorrect) {
-        feedbackBox.textContent = "Excelente escolha! 🌱 A irrigação por gotejamento leva água direto à raiz e reduz desperdícios estruturais em até 50%.";
-        feedbackBox.classList.add("success");
+// 2. COMPORTAMENTO DA ENQUETE RETRÔ
+function votarEnquete() {
+    const opcoes = document.getElementsByName('poll');
+    let selecionado = false;
+    
+    for (const opcao of opcoes) {
+        if (opcao.checked) {
+            selecionado = true;
+            break;
+        }
+    }
+    
+    if (selecionado) {
+        alert("Obrigado pelo seu voto! Seu dado foi processado nesta simulação anos 2000.");
     } else {
-        feedbackBox.textContent = "Ops, tente de novo! 💧 A aspersão convencional perde muita água por evaporação e vento, não sendo a mais otimizada.";
-        feedbackBox.classList.add("error");
+        alert("Por favor, selecione uma opção antes de votar!");
+    }
+}
+
+// 3. INTERATIVIDADE DO QUIZ DE SUSTENTABILIDADE
+function verificarQuiz(resultado) {
+    if (resultado === 'certo') {
+        alert("Correto! A Irrigação Inteligente evita o desperdício controlando a água com precisão milimétrica. +10 Pontos de Eco-Consciência!");
+    } else {
+        alert("Resposta Incorreta! Drones ajudam no mapeamento, mas quem controla o uso direto da água é a Irrigação Inteligente. Tente novamente!");
+    }
+}
+
+// 4. VALIDAÇÃO E ENVIO DO FORMULÁRIO DE MANIFESTO
+function configurarFormulario() {
+    const formulario = document.getElementById('contactForm');
+    
+    if (formulario) {
+        formulario.addEventListener('submit', (evento) => {
+            evento.preventDefault(); // Impede o recarregamento clássico da página
+            
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            
+            if (nome.trim() === "" || mensagem.trim() === "") {
+                alert("Erro no sistema: preencha todos os campos do manifesto!");
+            } else {
+                alert(`Obrigado, ${nome}! Seu manifesto ambiental foi registrado com sucesso em nossa base de dados.`);
+                formulario.reset(); // Limpa as caixas de digitação
+            }
+        });
     }
 }
