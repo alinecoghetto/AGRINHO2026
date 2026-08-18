@@ -1,4 +1,3 @@
-// EXECUTA FUNÇÕES RETRÔ AO CARREGAR A PÁGINA
 document.addEventListener("DOMContentLoaded", () => {
     iniciarRelogio();
     configurarFormulario();
@@ -19,7 +18,7 @@ function iniciarRelogio() {
     }, 1000);
 }
 
-// 2. COMPORTAMENTO DA ENQUETE RETRÔ
+// 2. ENQUETE RETRÔ
 function votarEnquete() {
     const opcoes = document.getElementsByName('poll');
     let selecionado = false;
@@ -32,13 +31,13 @@ function votarEnquete() {
     }
     
     if (selecionado) {
-        alert("Obrigado pelo seu voto! Seu dado foi processado nesta simulação anos 2000.");
+        alert("Obrigado pelo seu voto! Seu dado foi processado nesta simulação.");
     } else {
         alert("Por favor, selecione uma opção antes de votar!");
     }
 }
 
-// 3. INTERATIVIDADE DO QUIZ DE SUSTENTABILIDADE
+// 3. QUIZ DE SUSTENTABILIDADE
 function verificarQuiz(resultado) {
     if (resultado === 'certo') {
         alert("Correto! A Irrigação Inteligente evita o desperdício controlando a água com precisão milimétrica. +10 Pontos de Eco-Consciência!");
@@ -47,7 +46,7 @@ function verificarQuiz(resultado) {
     }
 }
 
-// 4. VALIDAÇÃO E ENVIO DO FORMULÁRIO DE MANIFESTO
+// 4. VALIDAÇÃO DO FORMULÁRIO DE MANIFESTO
 function configurarFormulario() {
     const formulario = document.getElementById('contactForm');
     
