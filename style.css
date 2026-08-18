@@ -1,7 +1,6 @@
 /* FUNDO COM TEXTURA DOS ANOS 2000 (Efeito Quadriculado/Gótico Escuro) */
 body {
     background-color: #0f0a14;
-    /* Padrão geométrico de linhas cruzadas simulando a textura escura das imagens */
     background-image: 
         linear-gradient(30deg, #150f1f 12%, transparent 12.5%, transparent 87%, #150f1f 87.5%, #150f1f),
         linear-gradient(150deg, #150f1f 12%, transparent 12.5%, transparent 87%, #150f1f 87.5%, #150f1f),
@@ -74,7 +73,7 @@ a:hover {
     border-collapse: separate;
 }
 
-/* BARRAS LATERAIS RENDADAS (Bordas pontilhadas simulando tiras de renda das imagens) */
+/* BARRAS LATERAIS */
 .sidebar-left, .sidebar-right {
     width: 22%;
     background-color: #0d0d0d;
@@ -93,7 +92,30 @@ a:hover {
     padding: 15px !important;
 }
 
-/* TÍTULOS DE CAIXAS COM SOMBREAMENTO RETRÔ DE PIXEL */
+/* IMAGENS DA PASTA ASSETS - ESTILO RETRÔ */
+.retro-image-container {
+    text-align: center;
+    margin: 15px 0;
+    background: #000;
+    padding: 8px;
+    border: 1px solid #5a3e85;
+}
+
+.retro-img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #5a3e85;
+    filter: contrast(110%);
+}
+
+.img-caption {
+    display: block;
+    font-size: 10px;
+    color: #9d7cd8;
+    margin-top: 5px;
+}
+
+/* TÍTULOS DE CAIXAS */
 .box-title {
     background: linear-gradient(90deg, #321b50, #130a1c);
     color: #ffffff;
@@ -119,7 +141,7 @@ a:hover {
     border-bottom: 1px dashed #333;
 }
 
-/* DIVISOR DE SEÇÃO EM FORMATO DE FIGURA RETRÔ */
+/* DIVISOR DE SEÇÃO */
 .retro-divider {
     text-align: center;
     color: #5a3e85;
@@ -128,7 +150,7 @@ a:hover {
     font-size: 12px;
 }
 
-/* ADICIONANDO MOLDURA NAS SEÇÕES */
+/* MOLDURA NAS SEÇÕES */
 .content-section {
     border: 1px double #332244;
     background-color: #161616;
@@ -175,7 +197,7 @@ a:hover {
     border-bottom: 2px solid #6c47a3;
 }
 
-/* CAIXA DE ENQUETE E STATUS */
+/* CAIXAS DE INTERAÇÃO */
 .poll-box, .status-box, .quiz-container {
     font-size: 12px;
     line-height: 1.5;
@@ -185,7 +207,6 @@ a:hover {
     margin-bottom: 10px;
 }
 
-/* BOTÕES ESTILO BANNER RETRÔ 88x31 */
 .retro-banner-button {
     width: 88px;
     height: 31px;
@@ -199,7 +220,6 @@ a:hover {
     text-align: center;
 }
 
-/* FORMULÁRIO DE MANIFESTO */
 .retro-form input[type="text"], .retro-form textarea {
     background-color: #000000;
     border: 1px solid #5a3e85;
@@ -209,7 +229,6 @@ a:hover {
     width: 90%;
 }
 
-/* RELÓGIO RETRÔ */
 .retro-clock {
     background-color: #000;
     color: #ff3333;
@@ -222,7 +241,6 @@ a:hover {
     letter-spacing: 1px;
 }
 
-/* RODAPÉ */
 .site-footer {
     text-align: center;
     font-size: 11px;
